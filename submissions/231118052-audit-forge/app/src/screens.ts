@@ -25,7 +25,7 @@ export const screens = {
     title: 'Forge',
     description: 'The repair loop advances only when each hypothesis survives a focused test.',
     cardTitle: 'Ratchet status',
-    cardBody: 'A failed hypothesis is retained as evidence instead of disappearing from the story.',
+    cardBody: 'Next step: keep the evidence, test the smallest repair, and only then advance the ratchet.',
     bullets: ['READ -> LOCATE -> REPAIR', 'TEST -> VERIFY -> COMMIT', 'Rollback when evidence says no'],
   },
 } satisfies Record<string, ScreenModel>;
