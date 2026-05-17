@@ -11,7 +11,7 @@ export const screens = {
     title: 'Capture',
     description: 'Three lightweight routes, one audit primitive, and no hidden customer data.',
     cardTitle: 'Issue capture checklist',
-    cardBody: 'Open the audit button, draw one yellow selection, and keep the note short enough for the repair loop.',
+    cardBody: 'Tap the audit button, draw one yellow selection, and leave one short note for the repair loop.',
     bullets: ['One visible problem per report', 'One screenshot with immutable burn-in', 'One concise customer note'],
   },
   reports: {
@@ -29,4 +29,3 @@ export const screens = {
     bullets: ['READ -> LOCATE -> REPAIR', 'TEST -> VERIFY -> COMMIT', 'Rollback when evidence says no'],
   },
 } satisfies Record<string, ScreenModel>;
-
