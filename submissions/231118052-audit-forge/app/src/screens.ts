@@ -18,7 +18,7 @@ export const screens = {
     title: 'Reports',
     description: 'Export-ready notes stay small, shareable, and coding-agent friendly.',
     cardTitle: 'Artifacts waiting to ship',
-    cardBody: 'Markdown stays the default because it is easy for humans to read and easy for an agent to consume.',
+    cardBody: 'Export Markdown for the repair loop, then share the same evidence with a reviewer when needed.',
     bullets: ['Markdown for the repair loop', 'DOCX for review handoff', 'Local storage only'],
   },
   forge: {
