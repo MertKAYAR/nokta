@@ -11,7 +11,7 @@ This Track A submission keeps the audit integration deliberately small: the host
 
 ## Demo Video
 
-- 60 second demo: https://youtu.be/3TrackADemo052
+- 60 second demo: https://www.youtube.com/watch?v=zQNbnZmKj3E
 
 ## Decision Log
 
@@ -41,4 +41,3 @@ Human touch points: 2
 - [ ] Three audit reports and burn-in assets exist
 - [ ] `FORGE.md` records at least three success cycles and one rollback
 - [ ] `app-release.apk` exists
-
