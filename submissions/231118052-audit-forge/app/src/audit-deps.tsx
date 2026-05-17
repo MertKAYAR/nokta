@@ -3,7 +3,7 @@ import type { ReactNode, RefObject } from 'react';
 import * as FileSystem from 'expo-file-system/legacy';
 import * as Sharing from 'expo-sharing';
 import { captureRef, captureScreen } from 'react-native-view-shot';
-import type { AuditNote, AuditStorage, AuditWidgetDeps } from '@xtatistix/mobile-audit';
+import type { AuditNote, AuditStorage } from '@xtatistix/mobile-audit';
 
 const STORAGE_KEY = 'audit_notes';
 
@@ -17,7 +17,7 @@ const storage: AuditStorage = {
   },
 };
 
-export function createAuditDeps(currentScreen: string, BugIcon: ReactNode): AuditWidgetDeps {
+export function createAuditDeps(currentScreen: string, BugIcon: ReactNode) {
   return {
     captureScreen: () => captureScreen({ format: 'png', result: 'tmpfile' }),
     captureRef: (ref: RefObject<unknown>) => captureRef(ref, { format: 'png', result: 'tmpfile' }),

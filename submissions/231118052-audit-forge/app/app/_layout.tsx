@@ -1,6 +1,6 @@
 import { Stack, usePathname } from 'expo-router';
 import { Text } from 'react-native';
-import { AuditWidget } from '@xtatistix/mobile-audit';
+import * as MobileAudit from '@xtatistix/mobile-audit';
 import { createAuditDeps } from '@/src/audit-deps';
 
 export default function RootLayout() {
@@ -20,8 +20,7 @@ export default function RootLayout() {
         <Stack.Screen name="reports" options={{ title: 'Reports' }} />
         <Stack.Screen name="forge" options={{ title: 'Forge' }} />
       </Stack>
-      <AuditWidget appName="Nokta Forge" deps={createAuditDeps(pathname, <Text style={{ fontSize: 20 }}>!</Text>)} initialPosition={{ bottom: 88, right: 18 }} />
+      <MobileAudit.AuditWidget appName="Nokta Forge" deps={createAuditDeps(pathname, <Text style={{ fontSize: 20 }}>!</Text>)} initialPosition={{ bottom: 88, right: 18 }} />
     </>
   );
 }
-
